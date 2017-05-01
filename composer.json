@@ -1,0 +1,22 @@
+{
+    "name": "writecrow/lorem_gutenberg",
+    "description": "A PHP library for generating filler text from Project Gutenberg books",
+    "type": "library",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "markfullmer",
+            "email": "mfullmer@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "writecrow\\LoremGutenberg\\": ["src/", "test/"] }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4"
+    },
+    "suggest": {
+        "ext-mbstring": "For best performance",
+        "symfony/polyfill-mbstring": "If you can't install ext-mbstring"
+    }
+}
