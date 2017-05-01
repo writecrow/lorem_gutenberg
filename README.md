@@ -25,7 +25,7 @@ echo $text;
 
 $text = LoremGutenberg::generate(array('author' => 'hardy', 'sentences' => 3));
 echo $text;
-// Will return an excerpt of 3 sentences from Thomas Hardy.</root>
+// Will return an excerpt of 3 sentences from Thomas Hardy.
 ```
 
 ## What authors are available?
