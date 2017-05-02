@@ -7,7 +7,7 @@ Project Gutenberg.
 
 ![Screenshot of Text Generation](https://raw.githubusercontent.com/writecrow/lorem_gutenberg/master/demo/screenshot.png)
 
-## Basic Usage
+## Usage in an application
 The included `/demo/index.php` file contains a generation form demo.
 
 Make your code aware of the LoremGutenberg class via your favorite method (e.g.,
@@ -27,6 +27,9 @@ $text = LoremGutenberg::generate(array('author' => 'hardy', 'sentences' => 3));
 echo $text;
 // Will return an excerpt of 3 sentences from Thomas Hardy.
 ```
+
+## Usage as an API
+The file in `/demo/api` demonstrates how GET parameters in a URL can be passed to LoremGutenberg. In effect, `https://my-api.org/api/?author=hardy&sentences=2` will return 2 sentences' worth of LoremGutenberg from Thomas Hardy.
 
 ## What authors are available?
 As of this writing, LoremGutenberg references texts from the following authors:
