@@ -25,6 +25,7 @@ class LoremGutenberg {
     'hardy' => 'Thomas Hardy',
     'lawrence' => 'D.H. Lawrence',
     'wharton' => 'Edith Wharton',
+    'woolf' => 'Virginia Woolf',
   ];
 
   /**
