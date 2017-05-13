@@ -2,13 +2,20 @@
     "name": "writecrow/lorem_gutenberg",
     "description": "A PHP library for generating filler text from Project Gutenberg books",
     "type": "library",
-    "license": "GPLv2",
+    "license": "MIT",
     "authors": [
         {
-            "name": "markfullmer",
-            "email": "mfullmer@gmail.com"
+            "name": "Mark Fullmer",
+            "email": "mark.writecrow@gmail.com",
+            "homepage": "https://markfullmer.com",
+            "role": "Developer"
         }
     ],
+    "support": {
+        "email": "mark.writecrow@gmail.com",
+        "issues": "https://github.com/writecrow/lorem_gutenberg/issues",
+        "source": "https://github.com/writecrow/lorem_gutenberg"
+    },
     "autoload": {
         "psr-4": { "writecrow\\LoremGutenberg\\": ["src/", "test/"] }
     },
