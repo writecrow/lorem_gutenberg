@@ -29,7 +29,19 @@ echo $text;
 ```
 
 ## Usage as an API
-The file in `/demo/api` demonstrates how GET parameters in a URL can be passed to LoremGutenberg. In effect, `https://my-api.org/api/?author=hardy&sentences=2` will return 2 sentences' worth of LoremGutenberg from Thomas Hardy.
+The file in `/demo/api` demonstrates how GET parameters in a URL can be passed to LoremGutenberg. For example, `https://my-api.org/api/?author=hardy&sentences=2` will return 2 sentences' worth of LoremGutenberg from Thomas Hardy.
+
+### Parameters
+| Name  | Description | Example |
+| ------------- | ------------- | ------------- |
+| `author`  | If absent, a random author will be used | hardy |
+| `sentences`  | If absent, a number from 1-10 will be used | 2 |
+
+### Sameple valid API queries
+`/api/?author=hardy&sentences=2`
+`/api/?author=hardy`
+`/api/?sentences=2`
+`/api/`
 
 ## What authors are available?
 As of this writing, LoremGutenberg references texts from the following authors:

@@ -70,7 +70,8 @@ echo '
   </form>
   <div class="row">
     <div class="six twelve columns"><hr />
-      <span class="u-pull-right">To see the REST API version, go to <a href="./api">/api</a></span>
+    <span>Source code & documentation at <a href="https://github.com/writecrow/lorem_gutenberg">https://github.com/writecrow/lorem_gutenberg</a>.</span>
+      <span class="u-pull-right">API version at <a href="./api">/api</a></span>
     </div>
   </div>
 </div>
