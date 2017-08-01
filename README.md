@@ -38,10 +38,10 @@ The file in `/demo/api` demonstrates how GET parameters in a URL can be passed t
 | `sentences`  | If absent, a number from 1-10 will be used | 2 |
 
 ### Sameple valid API queries
-`/api/?author=hardy&sentences=2`
-`/api/?author=hardy`
-`/api/?sentences=2`
-`/api/`
+- `/api/?author=hardy&sentences=2`
+- `/api/?author=hardy`
+- `/api/?sentences=2`
+- `/api/`
 
 ## What authors are available?
 As of this writing, LoremGutenberg references texts from the following authors:
