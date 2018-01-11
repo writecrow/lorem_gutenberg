@@ -9,13 +9,8 @@ require '../vendor/autoload.php';
 
 use writecrow\LoremGutenberg\LoremGutenberg;
 
-$authors = [
-  'random' => 'Surprise me',
-  'austen' => 'Jane Austen',
-  'hardy' => 'Thomas Hardy',
-  'lawrence' => 'D.H. Lawrence',
-  'wharton' => 'Edith Wharton',
-];
+$authors = LoremGutenberg::$authors;
+$authors['random'] = 'Surprise me';
 
 $options = [];
 if (isset($_POST['sentences']) && is_numeric($_POST['sentences']) && $_POST['sentences'] < 11) {
@@ -28,14 +23,14 @@ if (isset($_POST['author']) && in_array($_POST['author'], array_keys($authors)) 
 echo '<!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="/demo/css/normalize.css">
+  <link rel="stylesheet" href="/demo/css/skeleton.css">
 </head>
 <body>';
 
 echo '
 <div class="container">
-  <form action="//' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] . '" method="POST">
+  <form action="" method="POST">
     <div class="row"><div class="six columns">';
 
 echo '<label for="sentences">Number of sentences to generate:</label>
@@ -71,7 +66,7 @@ echo '
   <div class="row">
     <div class="six twelve columns"><hr />
     <span>Source code & documentation at <a href="https://github.com/writecrow/lorem_gutenberg">https://github.com/writecrow/lorem_gutenberg</a>.</span>
-      <span class="u-pull-right">API version at <a href="./api">/api</a></span>
+      <span class="u-pull-right">API version at <a href="/demo/api">/demo/api</a></span>
     </div>
   </div>
 </div>
