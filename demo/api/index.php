@@ -11,12 +11,7 @@ require '../../vendor/autoload.php';
 
 use writecrow\LoremGutenberg\LoremGutenberg;
 
-$authors = [
-  'austen' => 'Jane Austen',
-  'hardy' => 'Thomas Hardy',
-  'lawrence' => 'D.H. Lawrence',
-  'wharton' => 'Edith Wharton',
-];
+$authors = LoremGutenberg::$authors;
 
 $options = [];
 if (isset($_GET['sentences']) && is_numeric($_GET['sentences']) && $_GET['sentences'] < 11) {

@@ -22,8 +22,10 @@ class LoremGutenberg {
    */
   public static $authors = [
     'austen' => 'Jane Austen',
+    'darwin' => 'Charles Darwin',
     'hardy' => 'Thomas Hardy',
     'lawrence' => 'D.H. Lawrence',
+    'nietzsche' => 'Frederich Nietzsche',
     'wharton' => 'Edith Wharton',
     'woolf' => 'Virginia Woolf',
   ];
