@@ -9,8 +9,15 @@ require 'vendor/autoload.php';
 
 use writecrow\LoremGutenberg\LoremGutenberg;
 
+$authors = [
+  'random' => 'Surprise me',
+  'austen' => 'Jane Austen',
+  'hardy' => 'Thomas Hardy',
+  'lawrence' => 'D.H. Lawrence',
+  'wharton' => 'Edith Wharton',
+  'woolf' => 'Viriginia Woolf',
+];
 $authors = LoremGutenberg::$authors;
-$authors['random'] = 'Surprise me';
 
 $options = [];
 if (isset($_POST['sentences']) && is_numeric($_POST['sentences']) && $_POST['sentences'] < 11) {
