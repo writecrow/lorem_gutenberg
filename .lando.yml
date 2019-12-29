@@ -1,0 +1,4 @@
+name: lorem-gutenberg
+recipe: lamp
+config:
+  webroot: .

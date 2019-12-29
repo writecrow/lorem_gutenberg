@@ -5,10 +5,10 @@
 A PHP library for generating random text, sourced from various authors in
 Project Gutenberg.
 
-![Screenshot of Text Generation](https://raw.githubusercontent.com/writecrow/lorem_gutenberg/master/demo/screenshot.png)
+![Screenshot of Text Generation](https://raw.githubusercontent.com/writecrow/lorem_gutenberg/master/screenshot.png)
 
 ## Usage in an application
-The included `/demo/index.php` file contains a generation form demo.
+The included `/index.php` file contains a generation form demo.
 
 Make your code aware of the LoremGutenberg class via your favorite method (e.g.,
 `use` or `require`)
@@ -29,7 +29,7 @@ echo $text;
 ```
 
 ## Usage as an API
-The file in `/demo/api` demonstrates how GET parameters in a URL can be passed to LoremGutenberg. For example, `https://my-api.org/api/?author=hardy&sentences=2` will return 2 sentences' worth of LoremGutenberg from Thomas Hardy.
+The file in `/api` demonstrates how GET parameters in a URL can be passed to LoremGutenberg. For example, `https://my-api.org/api/?author=hardy&sentences=2` will return 2 sentences' worth of LoremGutenberg from Thomas Hardy.
 
 ### Parameters
 | Name  | Description | Example |

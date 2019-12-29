@@ -5,7 +5,7 @@
  * Demonstration file of using LoremGutenberg library.
  */
 
-require '../vendor/autoload.php';
+require 'vendor/autoload.php';
 
 use writecrow\LoremGutenberg\LoremGutenberg;
 
@@ -23,8 +23,8 @@ if (isset($_POST['author']) && in_array($_POST['author'], array_keys($authors)) 
 echo '<!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="/demo/css/normalize.css">
-  <link rel="stylesheet" href="/demo/css/skeleton.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
 </head>
 <body>';
 
@@ -66,7 +66,7 @@ echo '
   <div class="row">
     <div class="six twelve columns"><hr />
     <span>Source code & documentation at <a href="https://github.com/writecrow/lorem_gutenberg">https://github.com/writecrow/lorem_gutenberg</a>.</span>
-      <span class="u-pull-right">API version at <a href="/demo/api">/demo/api</a></span>
+      <span class="u-pull-right">API version at <a href="/api">/api</a></span>
     </div>
   </div>
 </div>

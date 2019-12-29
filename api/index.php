@@ -7,7 +7,7 @@
  * For demo purposes only.
  */
 
-require '../../vendor/autoload.php';
+require '../vendor/autoload.php';
 
 use writecrow\LoremGutenberg\LoremGutenberg;
 
@@ -21,4 +21,5 @@ if (isset($_GET['author']) && in_array($_GET['author'], array_keys($authors))) {
   $options['author'] = $_GET['author'];
 }
 $text = LoremGutenberg::generate($options);
-echo $text;
+header('Content-Type: application/json');
+echo json_encode(['data' => $text]);
