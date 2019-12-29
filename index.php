@@ -30,8 +30,8 @@ if (isset($_POST['author']) && in_array($_POST['author'], array_keys($authors)) 
 echo '<!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
 </head>
 <body>';
 
