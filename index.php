@@ -27,21 +27,18 @@ if (isset($_POST['author']) && in_array($_POST['author'], array_keys($authors)) 
   $options['author'] = $_POST['author'];
 }
 
-echo '<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/skeleton.css">
-</head>
-<body>';
+include 'head.html';
 
 echo '
+<body>
+<main>
 <div class="container">
+<h1>Lorem Gutenberg</h1>
   <form action="" method="POST">
     <div class="row"><div class="six columns">';
 
-echo '<label for="sentences">Number of sentences to generate:</label>
-<select name="sentences">';
+echo '<label>Number of sentences to generate:
+<select>';
 
 for ($i = 1; $i <= 10; $i++) {
   echo '<option value="' . $i . '"';
@@ -50,16 +47,16 @@ for ($i = 1; $i <= 10; $i++) {
   }
   echo '>' . $i . '</option>';
 }
-echo '</select>';
+echo '</select></label>';
 echo '</div><div class="six_columns">';
 
-echo '<label for="author">Author:</label>
-<select name="author">';
+echo '<label>Author:
+<select>';
 
 foreach ($authors as $key => $value) {
   echo '<option value="' . $key . '">' . $value . '</option>';
 }
-echo '</select>';
+echo '</select></label>';
 echo '</div><div class="row">';
 echo '<input type="submit" name="json" value="Generate Lorem Gutenberg" />';
 echo '<div>';
@@ -77,5 +74,6 @@ echo '
     </div>
   </div>
 </div>
+</main>
 </body>
 </html>';
